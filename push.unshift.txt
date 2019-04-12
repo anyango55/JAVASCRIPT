@@ -1,0 +1,8 @@
+﻿var myArray = ['joy','love','happiness']
+
+var myArray.push("peace")
+var myArray.unshift("kindness")
+
+console.log(myArray)
+
+["kindness","joy","love","happiness","kindness"]
