@@ -1,0 +1,19 @@
+// let user={
+//  name: "Jane Doe",
+//  years: 20 
+// };
+//Destructuring assignment
+// let{name:name,years:age, isStudent="false"}=user
+// console.log(name,years,isStudent)
+
+//Arrow function
+let ask = (question,yes,no) =>{
+  if (confirm(question))yes()
+  else no();
+}
+
+ask(
+  "Do you agree?",
+  ()=>{console.log("You agreed");},
+  ()=>{console.log("You cancelled the execution");}
+);
