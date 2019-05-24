@@ -1,0 +1,173 @@
+class MumMboga
+{
+  
+  constructor()
+  {
+    this.products = [];
+    this.carts = [];
+    this.orders = [];
+    this.customers  = [];
+  }
+  
+
+
+addProduct(productId,name,price,quantity)
+  {
+  let product =
+  {
+    productId:productId,
+    name:name,
+    price:price,
+    quantity:quantity,
+  }
+  this.farms.push(farm)
+  }
+
+
+ removeProduct(productId){
+     let product = this.getProduct(productId)
+    let index = this.products.indexOf(product);
+    this.product.splice(index,1)
+    
+  }
+
+
+
+
+getProduct(productId)
+  {
+    for(var i=0; i < this.products.length; i++)
+    {
+       product = this.products[i];
+      if(product.productId === productId)
+      {
+        return product
+      }
+    }
+  }
+
+
+addCustomer(customerId,name,email,address)
+  {
+  let customer =
+      {
+    customerId:customerId,
+    name:name,
+    email:email,
+    address:address,
+  }
+  this.customers.push(customer)
+}
+
+
+removeCustomer(customerId)
+  {
+    let customer = this.getCustomer(customerId)
+    let index = this.customers.indexOf(customer);
+    this.customer.splice(index,1)
+    
+  }
+
+
+
+
+getCustomer(customerId)
+  {
+    for(var i=0; i < this.customers.length; i++)
+    {
+      let farm = this.customers[i];
+      if(customer.customerId === customerId)
+      {
+        return customer
+      }
+    }
+  }
+
+
+addToCart(cartId,product,orderQuantity,customerId)
+  {
+  let product =
+      {
+    cartIdId:cartId,
+    orderQuantity:orderQuantity,
+    customerId:customerId,
+    
+  }
+  this.product.push(cart)
+}
+
+
+
+removeFromCart(productId)
+  {
+    let product = this.getProduct(productId)
+    index = this.product.indexOf(products);
+    this.product.splice(index,1)
+    
+  }
+
+
+createOrder(orderId,cartId)
+  {
+  let order=
+      {
+    orderId:orderId,
+    cartId:cartId,
+    
+  }
+  
+  
+   calculateOrderCost(orderId)
+  {
+    var orderCost = 0;
+    for (var i in cart) 
+    {
+      orderCost += cart[i].price * cart[i].count
+      
+    }
+    return orderCost;
+  }
+  
+  
+  
+  getOrder(OrderId)
+  {
+    for(var i=0; i < this.orders.length; i++)
+    {
+      let order = this.orders[i];
+      if(order.orderId === orderId)
+      {
+        return order
+      }
+    }
+  }
+  
+  
+  updateProduct(productId,name,price,quantity)
+  {
+    
+      for(var i=0; i < this.products.length; i++)
+      {
+      let product = this.products[i];
+      
+      } 
+  }
+  
+   updateCustomer(customerId,name,email,address)
+  {
+    
+      for(var i=0; i < this.customers.length; i++)
+      {
+      let customer = this.customers[i];
+      
+      } 
+  }
+  
+ 
+  
+}
+
+
+
+
+
