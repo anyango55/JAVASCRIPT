@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Greens Kiossk</title>
+</head>
+<body>
+	<script type="text/javascript">
+		document.body.style.backgroundColor="silver"
+		document.getElementById('h1').style.color = "green"
+		document.getElementById('h3').style.textTransform = "capitalize"
+		var node = document.createElement("li");
+		var textnode = document.createTextNode("Apple");
+		node.appendChild(textnode);
+		document.getElementById('fruitList').appendChild(node);
+
+		var node = document.createElement("li");
+		var textnode = document.createTextNode("Cabbage");
+		node.appendChild(textnode);
+		document.getElementById('VegList').appendChild(node);
+
+
+	</script>
+	<h1 id="title">Welcome to Greens Kiosk</h1>
+	<p> We sell fruits and vegetables</p>
+	<h3>Fruits</h3>
+	<ul id="fruitsList">
+		<li>Mangoes</li>
+		<li>Bananas</li>
+		<li>Water Melon</li>
+	</ul>
+	<h3>Vegetables</h3>
+	<ul id="VegList">
+		<li>Onion</li>
+		<li>Tomatoes</li>
+		<li>Kales</li>
+	</ul>
+</body>
+</html>
