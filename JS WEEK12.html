@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Green Kiosk</title>
+	<script >
+
+		var txt = document.getElementById('txt');
+
+			setInterval(changeColor,1000);
+
+			function changeColor(){
+
+				var r = Math.floor(Math.random()*255);
+				var g = Math.floor(Math.random()*255);
+				var b = Math.floor(Math.random()*255);
+
+			txt.style.color = "red";
+
+		}
+
+		changeColor();
+
+
+	function populate(s1,s2)	{
+		var s1 = document.getElementById(s1);
+		var s2 = document.getElementById(s2);
+
+	// function pushData(s1,s2)
+
+
+	// {
+	// 	var inputText = document.getElementById('inputText').value;
+	// 	optionArray.push(inputText);
+
+	// 	var pval = "";
+
+	// 	for(i = 0; i < optionArray.length; i++ ;)
+	// 	{
+	// 		pval = pval + optionArray[i] + "<br>";
+	// 	}
+	// 	document.getElementById('pText').innerHTML = pval;
+	// }
+
+
+	s2.innerHTML = "";
+	if(s1.value == "Fruits") {
+		var optionArray = ["|","mangoes|Mangoes","bananas|Bananas","watermelon|Watermelon",];
+	}
+
+
+	else
+
+	if(s2.value == "Vegetables") {
+		var optionArray = ["|","onions|Onions","tomatoes|Tomatoes","kales|Kales",];
+	}
+	
+
+
+
+	for(var option in optionArray ){
+		var pair = optionArray[option].split("|");
+		var newOption = document.createElement("option");
+		newOption.value = pair[0];
+		newOption.innerHTML = pair[1];
+		s2.options.add(newOption);
+
+	}
+
+
+	}
+	</script>
+	
+</head>
+<body>
+	<!-- <input type="text" name="text" id="inputText">
+	<button onclick="pushData();">Add</button>
+	<select id="pText" name=""></select>
+
+	   -->
+	  
+	 <h2 id="text">Welcome to Greens Kiosk</h2>
+
+
+
+	<hr>
+	Choose grocery:
+	<select id="slct1" name="slct1" onchange="populate(this.id,'slct2')">
+		<option value = ""></option>
+		<option value = "Fruits">Fruits</option>
+		<option value = "Vegetables">Vegetables</option>
+		
+	</select>
+	<hr>
+	Choose Fruit/Vegetable:
+	<select id="slct2" name="slct2">
+		
+	</select>
+	<hr>
+	<script type="text/javascript
+	">
+		
+	</script>
+</body>
+</html>
